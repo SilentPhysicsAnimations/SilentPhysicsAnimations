@@ -37,7 +37,7 @@ while True:
             ends = list(map(int, part.split('-', 1)))
             if len(ends) == 1:
                 ends.append(ends[0])
-            if not (1 <= ends[0] <= 12 and 1 <= ends[1] <= 12):
+            if not (1 <= ends[0] <= ends[1] <= 12):
                 raise ValueError
             for num in range(ends[0], ends[1]+1):
                 if num not in render_numbers:
