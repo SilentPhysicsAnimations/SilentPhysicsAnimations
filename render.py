@@ -87,7 +87,7 @@ for anim in animations_to_render:
     name = anim['name']
     print(f"[1;2m⠀⠀⠀⠀ [00:00:00][0;2m     Waiting to render [1;2m‘{name}’[0m")
 
-num_anims = len(animations)
+num_anims = len(animations_to_render)
 
 render_start = time.time()
 
